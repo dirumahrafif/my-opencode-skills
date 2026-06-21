@@ -1,37 +1,44 @@
-# 🚀 Panduan Instalasi Skill Opencode (Windows)
+# 🚀 Panduan Instalasi Skill Opencode
 
-Jika Anda ingin menggunakan skill opencode ini, ikuti langkah-langkah mudah berikut:
+Jika Anda ingin menggunakan skill opencode ini, ikuti langkah-langkah berikut:
 
 ### Langkah 1: Mengambil Skill dari GitHub
-Buka terminal (Git Bash atau Command Prompt) dan jalankan perintah berikut untuk mengunduh repositori:
+Buka terminal dan jalankan perintah berikut:
 
 ```bash
 git clone https://github.com/dirumahrafif/my-opencode-skills.git
 ```
 
-### Langkah 2: Menyalin Folder Skill (Manual)
-1. Buka folder hasil clone tadi melalui **File Explorer**.
-2. **Pilih semua folder skill** yang ingin Anda pasang, lalu tekan `Ctrl + C` (Copy).
-3. Tekan tombol `Windows + R` pada keyboard, lalu ketik:
-   `%APPDATA%\opencode\skills\`
-4. Tekan `Enter`. (Jika folder belum ada, silakan buat folder bernama `skills` di dalam folder `opencode`).
-5. Di dalam folder `skills` tersebut, tekan `Ctrl + V` (Paste).
+### Langkah 2: Menyalin Folder Skill
+
+**Untuk Pengguna Windows:**
+1. Buka folder hasil clone melalui **File Explorer**.
+2. Salin folder skill yang ingin dipasang.
+3. Tekan `Windows + R`, ketik `%APPDATA%\opencode\skills\`, lalu tekan `Enter`.
+4. Tempel (Paste) folder tersebut di sana.
+
+**Untuk Pengguna Mac & Linux:**
+1. Buka terminal dan masuk ke folder hasil clone.
+2. Salin folder skill ke direktori konfigurasi opencode:
+   ```bash
+   cp -r my-opencode-skills ~/.config/opencode/skills/
+   ```
 
 ### Langkah 3: Mendaftarkan Skill di `opencode.jsonc`
-1. Cari file `opencode.jsonc` di folder `%APPDATA%\opencode\`.
-2. Buka dengan Notepad atau VS Code.
-3. Tambahkan skill Anda ke dalam daftar `skills`:
+1. Buka file konfigurasi:
+   - **Windows:** `%APPDATA%\opencode\opencode.jsonc`
+   - **Mac/Linux:** `~/.config/opencode/opencode.jsonc`
+2. Tambahkan skill ke dalam daftar `skills`:
    ```json
    {
      "skills": [
        {
          "name": "create-issues",
-         "location": "%APPDATA%/opencode/skills/create-issues"
+         "location": "/path/to/opencode/skills/create-issues"
        }
      ]
    }
    ```
-   *(Pastikan jalur `location` sesuai dengan lokasi folder di komputer Anda).*
 
 ---
 **Selesai!** Sekarang skill siap digunakan dengan memanggil *trigger keywords* yang ada di dalam `SKILL.md`.
