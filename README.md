@@ -42,3 +42,4 @@ git clone https://github.com/dirumahrafif/my-opencode-skills.git
 
 ---
 **Selesai!** Sekarang skill siap digunakan dengan memanggil *trigger keywords* yang ada di dalam `SKILL.md`.
+
