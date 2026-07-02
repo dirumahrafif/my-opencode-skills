@@ -10,7 +10,7 @@ description: Execute and automate coding tasks from the .agents/tasks/ directory
 - **Nama:** Implement Task
 - **Versi:** 1.0
 - **Output:** Kode implementasi dari task yang dipilih
-- **Dependensi:** TASKS.md (wajib dibaca)
+- **Dependensi:** 3-TASKS.md (wajib dibaca)
 
 ## 🎯 Trigger Keywords
 Otomatis aktif saat user menyebut:
@@ -22,18 +22,18 @@ Otomatis aktif saat user menyebut:
 - "Jalankan task"
 
 ## 📝 Deskripsi
-Skill ini membaca daftar task dari `.agents/TASKS.md` dan mengimplementasikannya satu per satu. Konten implementasi menyesuaikan stack apapun.
+Skill ini membaca daftar task dari `.agents/3-TASKS.md` dan mengimplementasikannya satu per satu. Konten implementasi menyesuaikan stack apapun.
 
 ## 📂 Baca/Menyimpan File
-- **Baca Task (WAJIB):** `@.agents/TASKS.md`
-- **Baca Tech Spec:** `@.agents/TECH-SPEC.md` (opsional, untuk referensi)
-- **Update Task:** `.agents/TASKS.md` (update status task)
+- **Baca Task (WAJIB):** `@.agents/3-TASKS.md`
+- **Baca Tech Spec:** `@.agents/2-TECH-SPEC.md` (opsional, untuk referensi)
+- **Update Task:** `.agents/3-TASKS.md` (update status task)
 
 ## ⚙️ Cara Kerja Skill
 
 ### FASE 1: Deteksi Trigger & Baca Task
 **WAJIB:** Sebelum implementasi, AI HARUS:
-1. Cek file `.agents/TASKS.md`
+1. Cek file `.agents/3-TASKS.md`
 2. Jika ada: baca dan cari task dengan status "Todo"
 3. Jika tidak ada: minta user buat Task dulu
 
@@ -67,7 +67,7 @@ Jika user tidak memilih, ambil task dengan prioritas **High** pertama.
    - Jika sudah: lanjut ke step 3
 3. Baca file yang akan diubah (jika sudah ada)
 4. Tulis kode implementasi ke file — sesuaikan dengan stack dan konteks project
-5. Update status task menjadi "Done" di file TASKS.md
+5. Update status task menjadi "Done" di file 3-TASKS.md
 
 ### FASE 4: Finalisasi & Next Step
 Setelah task selesai diimplementasikan:

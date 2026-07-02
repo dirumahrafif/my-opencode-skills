@@ -9,7 +9,7 @@ description: Buat Product Requirement Document singkat dan padat untuk memulai p
 - **Nama:** PRD Generator
 - **Versi:** 1.0
 - **Output:** PRD 6 bagian
-- **Lokasi File:** `.agents/PRD.md`
+- **Lokasi File:** `.agents/1-PRD.md`
 
 
 ## 🎯 Trigger Keywords
@@ -26,13 +26,13 @@ Otomatis aktif saat user menyebut:
 Skill ini membuat PRD ringkas tapi detail untuk keperluan vibe coding. Cukup untuk lanjut ke Tech Spec dan Implementasi.
 
 ## 📂 Baca/Menyimpan File
-- **Baca:** `@.agents/PRD.md`
-- **Simpan:** `.agents/PRD.md`
+- **Baca:** `@.agents/1-PRD.md`
+- **Simpan:** `.agents/1-PRD.md`
 
 ## ⚙️ Cara Kerja Skill
 
 ### FASE 1: Deteksi Trigger
-- Jika user bilang **"baca"** atau **"load"** → Baca `.agents/PRD.md` dan beri ringkasan.
+- Jika user bilang **"baca"** atau **"load"** → Baca `.agents/1-PRD.md` dan beri ringkasan.
 - Jika user bilang **"buat"** atau **"ide"** → Lanjut ke FASE 2.
 
 ### FASE 2: Klarifikasi (3 Pertanyaan)
@@ -47,7 +47,7 @@ Hasilkan PRD **per bagian**. Setiap bagian minta user ketik `lanjut`.
 ### FASE 4: Finalisasi
 Setelah bagian 6 selesai:
 1. Ucapkan selamat.
-2. Instruksikan simpan ke `.agents/PRD.md`.
+2. Instruksikan simpan ke `.agents/1-PRD.md`.
 3. Rekomendasikan lanjut ke **Tech Spec Generator**.
 
 ## 📑 6 Bagian PRD
@@ -186,7 +186,7 @@ Setelah bagian 6 selesai:
 ## 🔄 Finalisasi
 
 1. **Simpan file:**
-   Simpan seluruh konten PRD sebagai `.agents/PRD.md`
+   Simpan seluruh konten PRD sebagai `.agents/1-PRD.md`
 
 2. **Lanjut ke Tech Spec:**
    Ketik: `"Buat Tech Spec berdasarkan PRD yang sudah dibuat"`

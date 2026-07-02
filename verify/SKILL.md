@@ -11,7 +11,7 @@ description: Double-check tasks using Automated (Unit/Integration) and Manual te
 - **Nama:** Verify
 - **Versi:** 1.0
 - **Output:** Laporan verifikasi
-- **Dependensi:** TASKS.md (wajib), dokumen lain opsional
+- **Dependensi:** 3-TASKS.md (wajib), dokumen lain opsional
 
 ---
 
@@ -28,16 +28,16 @@ Otomatis aktif saat user menyebut:
 Skill ini memverifikasi task yang sudah diimplementasikan dengan mengecek kode, menjalankan test, dan memastikan task berfungsi sesuai acuan.
 
 ## 📂 Baca/Menyimpan File
-- **Baca Task (WAJIB):** `@.agents/TASKS.md`
-- **Baca Tech Spec:** `@.agents/TECH-SPEC.md` (opsional)
-- **Baca PRD:** `@.agents/PRD.md` (opsional)
+- **Baca Task (WAJIB):** `@.agents/3-TASKS.md`
+- **Baca Tech Spec:** `@.agents/2-TECH-SPEC.md` (opsional)
+- **Baca PRD:** `@.agents/1-PRD.md` (opsional)
 - **Simpan Laporan:** `.agents/REVIEW.md`
 
 ## ⚙️ Cara Kerja Skill
 
 ### FASE 1: Deteksi Trigger & Baca Dokumen
 **WAJIB:** Sebelum verifikasi, AI HARUS:
-1. Cek file `.agents/TASKS.md` — cari task dengan status "Done"
+1. Cek file `.agents/3-TASKS.md` — cari task dengan status "Done"
 2. Jika ada dokumen lain (PRD, Tech Spec) → baca sebagai referensi tambahan
 3. Jika tidak ada: minta user buat Task dulu atau tentukan task yang akan diverifikasi
 
@@ -92,6 +92,6 @@ Saran:
 ```
 
 ### Update Status
-- Jika lolos → status tetap "Done" di TASKS.md
+- Jika lolos → status tetap "Done" di 3-TASKS.md
 - Jika ada catatan → tulis laporan ke `.agents/REVIEW.md`, user bisa perbaiki lalu review ulang
 

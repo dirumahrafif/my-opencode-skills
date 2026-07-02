@@ -11,8 +11,8 @@ description: Write technical specifications for features, changes, or bug fixes.
 - **Nama:** Tech Spec Generator
 - **Versi:** 1.0
 - **Output:** Tech Spec 5 bagian
-- **Lokasi File:** `.agents/TECH-SPEC.md`
-- **Dependensi:** PRD.md (wajib dibaca)
+- **Lokasi File:** `.agents/2-TECH-SPEC.md`
+- **Dependensi:** 1-PRD.md (wajib dibaca)
 
 ## 🎯 Trigger Keywords
 Otomatis aktif saat user menyebut:
@@ -25,18 +25,18 @@ Otomatis aktif saat user menyebut:
 - "Load Tech Spec"
 
 ## 📝 Deskripsi
-Skill ini membaca PRD dari `.agents/PRD.md` dan menghasilkan Tech Spec ringkas tapi detail. Berisi tech stack, database, interface, dan alur teknis — konten menyesuaikan stack apapun. Siap pakai untuk Tasking dan Implementasi.
+Skill ini membaca PRD dari `.agents/1-PRD.md` dan menghasilkan Tech Spec ringkas tapi detail. Berisi tech stack, database, interface, dan alur teknis — konten menyesuaikan stack apapun. Siap pakai untuk Tasking dan Implementasi.
 
 ## 📂 Baca/Menyimpan File
-- **Baca PRD (WAJIB):** `@.agents/PRD.md`
-- **Baca Tech Spec:** `@.agents/TECH-SPEC.md`
-- **Simpan Tech Spec:** `.agents/TECH-SPEC.md`
+- **Baca PRD (WAJIB):** `@.agents/1-PRD.md`
+- **Baca Tech Spec:** `@.agents/2-TECH-SPEC.md`
+- **Simpan Tech Spec:** `.agents/2-TECH-SPEC.md`
 
 ## ⚙️ Cara Kerja Skill
 
 ### FASE 1: Deteksi Trigger & Baca PRD
 **WAJIB:** Sebelum membuat Tech Spec, AI HARUS:
-1. Cek file `.agents/PRD.md`
+1. Cek file `.agents/1-PRD.md`
 2. Jika ada: baca dan jadikan acuan
 3. Jika tidak ada: minta user buat PRD dulu
 
@@ -61,7 +61,7 @@ Hasilkan per bagian. User ketik `lanjut` untuk melanjutkan.
 ### FASE 4: Finalisasi
 Setelah bagian 5 selesai:
 1. Ucapkan selamat.
-2. Instruksikan simpan ke `.agents/TECH-SPEC.md`.
+2. Instruksikan simpan ke `.agents/2-TECH-SPEC.md`.
 3. Rekomendasikan lanjut ke **Task Generator**.
 
 ## 📑 5 Bagian Tech Spec
@@ -224,7 +224,7 @@ Contoh:
 ## 🔄 Finalisasi
 
 1. **Simpan file:**
-   Simpan seluruh konten Tech Spec sebagai `.agents/TECH-SPEC.md`
+   Simpan seluruh konten Tech Spec sebagai `.agents/2-TECH-SPEC.md`
 
 2. **Lanjut ke Task Generator:**
    Ketik: `"Buat Task berdasarkan Tech Spec yang sudah dibuat"`

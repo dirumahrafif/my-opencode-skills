@@ -9,8 +9,8 @@ description: Create local task lists from a Tech Spec file or direct input (bugs
 - **Nama:** Task Generator
 - **Versi:** 1.0
 - **Output:** Task list terperinci
-- **Lokasi File:** `.agents/TASKS.md`
-- **Dependensi:** TECH-SPEC.md (opsional — bisa langsung input user)
+- **Lokasi File:** `.agents/3-TASKS.md`
+- **Dependensi:** 2-TECH-SPEC.md (opsional — bisa langsung input user)
 
 ## 🎯 Trigger Keywords
 Otomatis aktif saat user menyebut:
@@ -23,12 +23,12 @@ Otomatis aktif saat user menyebut:
 - "Load Task"
 
 ## 📝 Deskripsi
-Skill ini membaca Tech Spec dari `.agents/TECH-SPEC.md` dan menghasilkan daftar tugas (Task) yang terperinci — konten task menyesuaikan stack apapun. Setiap task berisi: judul, deskripsi, prioritas, status, dan dependensi. Siap pakai untuk Implementasi.
+Skill ini membaca Tech Spec dari `.agents/2-TECH-SPEC.md` dan menghasilkan daftar tugas (Task) yang terperinci — konten task menyesuaikan stack apapun. Setiap task berisi: judul, deskripsi, prioritas, status, dan dependensi. Siap pakai untuk Implementasi.
 
 ## 📂 Baca/Menyimpan File
-- **Baca Tech Spec:** `@.agents/TECH-SPEC.md` (jika ada)
-- **Baca Task:** `@.agents/TASKS.md`
-- **Simpan Task:** `.agents/TASKS.md`
+- **Baca Tech Spec:** `@.agents/2-TECH-SPEC.md` (jika ada)
+- **Baca Task:** `@.agents/3-TASKS.md`
+- **Simpan Task:** `.agents/3-TASKS.md`
 
 ## ⚙️ Cara Kerja Skill
 
@@ -39,9 +39,9 @@ Skill ini membaca Tech Spec dari `.agents/TECH-SPEC.md` dan menghasilkan daftar 
 - Atau hanya trigger kata kunci tanpa deskripsi?
 
 **Langkah 2 — Cek sumber acuan:**
-- Jika ada TECH-SPEC.md → baca dan jadikan acuan untuk breakdown
+- Jika ada 2-TECH-SPEC.md → baca dan jadikan acuan untuk breakdown
 - Jika user memberikan input langsung (bug/task sederhana) → langsung proses tanpa Tech Spec, gunakan input user sebagai acuan
-- Jika tidak ada TECH-SPEC.md DAN user tidak memberikan input → minta user buat Tech Spec dulu
+- Jika tidak ada 2-TECH-SPEC.md DAN user tidak memberikan input → minta user buat Tech Spec dulu
 
 **Langkah 3 — Auto-detect boilerplate (opsional, jika di direktori project):**
 AI cek apakah project sudah ada atau masih baru dengan mencari file kunci:
@@ -67,7 +67,7 @@ Dua mode tergantung sumber acuan:
 ### FASE 4: Finalisasi
 Setelah semua task selesai:
 1. Tampilkan task list ke user untuk review.
-2. Instruksikan simpan ke `.agents/TASKS.md`.
+2. Instruksikan simpan ke `.agents/3-TASKS.md`.
 3. Rekomendasikan lanjut ke **Implementation**.
 
 ## 📑 Struktur Task
