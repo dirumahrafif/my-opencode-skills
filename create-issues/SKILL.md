@@ -79,6 +79,7 @@ Setiap task memiliki format:
 - **Prioritas:** High/Mid/Low
 - **Status:** Todo/In Progress/Done
 - **Dependensi:** [ID task yang harus selesai dulu]
+- **Tanggal:** [YYYY-MM-DD]
 - **Estimasi:** [Jam/hari]
 - **File yang diubah:** [Path file]
 
