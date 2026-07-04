@@ -21,7 +21,7 @@ git clone https://github.com/dirumahrafif/my-opencode-skills.git
 1. Buka terminal dan masuk ke folder hasil clone.
 2. Salin folder skill ke direktori konfigurasi opencode:
    ```bash
-   cp -r my-opencode-skills ~/.config/opencode/skills/
+   cp -r my-opencode-skills/* ~/.config/opencode/skills/
    ```
 
 ### Langkah 3: Mendaftarkan Skill di `opencode.jsonc`
